@@ -8,13 +8,13 @@ class App extends React.Component {
     this.state = {
       monsters: [],
     };
-  }
-  
+  };
+
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
       .then((users) => this.setState({ monsters: users }));
-  }
+  };
 
   render() {
     return (
