@@ -10,7 +10,7 @@ class App extends React.Component {
       monsters: [],
       searchField: "",
     };
-    this.handleChange = this.handleChange.bind(this);
+    this.handleChange = this.handleChange.bind(this); //You can use arrow func and remove this line of code
   }
 
   componentDidMount() {
